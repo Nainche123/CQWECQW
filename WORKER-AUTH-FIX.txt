@@ -1,0 +1,5 @@
+NEXIVO HUB bot auth update
+- /api/bot/license/activate no longer requires the shared worker secret.
+- Successful activation returns a per-license bot secret to the buyer bot.
+- Customer bot API calls can authenticate with X-NEXIVO-License + X-NEXIVO-Bot-Secret.
+- Shared NEXIVO_BOT_WORKER_SECRET remains optional for legacy/shared worker and owner operations.
